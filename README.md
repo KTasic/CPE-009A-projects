@@ -1,6 +1,7 @@
 <div align="center">
-# CPE-009A-projects
+#<p align="center"> CPE-009A-projects
 for cpe 009a projects
-
-<img src="https://i.imgur.com/xTgh1Vl.png" alt="Alt text" width="500"/>
+<h1 align="center">  
+  <img src="https://i.imgur.com/xTgh1Vl.png" alt="Alt text" width="500"/>
+</h1>
 </div>
