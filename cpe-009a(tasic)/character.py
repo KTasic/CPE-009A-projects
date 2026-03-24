@@ -1,13 +1,18 @@
 class Character():
-    def __init__(self, username):
+    def __init__(self, username, types):      #added type to make game.py easier
+        self.__type = types
         self.__username = username
         self.__hp = 100
         self.__mana = 100
-        self.__damage = 5
+        self.__damage = 5 
         self.__stren = 0 #strength stat
         self.__vit = 0 #vitality stat
         self.__int = 0 #inteligence stat
         self.__agi = 0 #agility stat
+    def getType(self):
+        return self.__type
+    def setType(self, new_type):
+        self.__type = new_type
     def getUsername(self):
         return self.__username
     def setUsername(self, new_username):
@@ -24,8 +29,8 @@ class Character():
         return self.__damage
     def setDamage(self, new_damage):
         self.__damage = new_damage
-    def getStrength(self):              #Changed all "str" to stren
-        return self.__stren
+    def getStrength(self):              #Changed all "getStr/setStr" to "getStrength/setStrength"
+        return self.__stren             #Changed all "str" to stren
     def setStrength(self, new_stren):
         self.__stren = new_stren
     def getVit(self):
@@ -48,6 +53,6 @@ class Character():
 
 
 print("test")
-char1 = Character("kt50")       
+char1 = Character("kt50", "mage")       
 print(char1.getUsername())
 #removed "print(character1.__username)"
